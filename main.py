@@ -2,7 +2,8 @@ import os
 import logging
 from dotenv import load_dotenv
 from telegram.ext import Updater, MessageHandler, Filters
-
+import re
+# re.match(r"\w\d[-: ]\w\d", "B3 B4")
 
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO
